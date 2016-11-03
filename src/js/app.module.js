@@ -7,6 +7,7 @@ import home from './pages/home';
 
 import '../css/main.scss';
 
-angular.module('app', [uirouter, home])
+export default angular.module('app', [uirouter, home])
   .component('navbar', navbarComponent)
-  .config(routing);
+  .config(routing)
+  .name;

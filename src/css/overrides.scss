@@ -1,19 +1,16 @@
 body {
   padding-bottom: 70px;
+  padding-top: 70px;
 
-  .main-container {
-    margin-top: 100px;
-  }
-  
   .container {
     max-width: 960px;
-    
+
     .panel-title {
     	font-weight: bold;
     	color: color(primary);
     	text-align: center;
     }
-    
+
     .thumbnail {
       max-width: 250px;
       height: 300px;
@@ -22,18 +19,18 @@ body {
       margin-bottom: 20px;
       padding-top: 20px;
     }
-    
+
     .thumbnail__nobutton {
       height: 260px;
     }
-    
+
     .img-responsive {
       margin: 0 auto;
     }
-  }  
+  }
 }
 
-// To prevent collapsing menu on mobile viewports: 
+// To prevent collapsing menu on mobile viewports:
 
 .navbar-collapse.collapse {
   display: block!important;
