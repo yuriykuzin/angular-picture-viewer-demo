@@ -35,7 +35,7 @@ module.exports = function makeWebpackConfig(options) {
         config.entry = {}
     } else {
         config.entry = {
-            app: './src/app.module.js'
+            app: './src/js/app.module.js'
         }
     }
 
@@ -120,7 +120,7 @@ module.exports = function makeWebpackConfig(options) {
             // Rename the file using the asset hash
             // Pass along the updated reference to your code
             // You can add here any file extension you want to get copied to your output
-            test: /\.(png|jpg|jpeg|gif)$/,
+            test: /\.(png|jpg|jpeg|gif|ico)$/,
             loader: 'file'
         },{
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
