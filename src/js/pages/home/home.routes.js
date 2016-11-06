@@ -1,7 +1,7 @@
 routes.$inject = ['$stateProvider'];
 
-export default function routes($stateProvider) {
-  $stateProvider
+export default function routes($routeProvider) {
+  $routeProvider
     .state('home', {
       url: '/',
       template: require('./home.html'),
