@@ -1,4 +1,5 @@
 export default class AlbumController {
-  constructor() {
+  constructor($state, $scope) {
+    $scope.albumid = $state.params.albumid;
   }
 }
