@@ -1,1 +1,0 @@
-# Angular Picture Viewer Demo
