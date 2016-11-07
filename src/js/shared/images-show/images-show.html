@@ -6,10 +6,11 @@
 	<div class="panel-body">
 		<div ng-repeat="image in $ctrl.imagesToShow" class="col-xs-12 col-sm-6 col-md-4 thumbplace">
 			<div class="thumbnail" ng-class="($ctrl.albumTitle) ? 'thumbnail__nobutton' : ''">
-				<a uisref="['/image/' + image.id]"><img ng-src="{{image.thumbnailUrl}}" alt="{{image.title}}"></a>
+				<a href="{{'image/' + image.id}}"><img ng-src="{{image.thumbnailUrl}}" alt="{{image.title}}"></a>
 				<div class="caption">
 					<p>{{image.title}}</p>
-					<a  ng-if="!$ctrl.albumTitle" [routerLink]="['/album/' + image.albumId]" class="btn btn-default" role="button">See Album (#{{image.albumId}})</a>
+					<a  ng-if="!$ctrl.albumTitle" href="{{'album/' + image.albumId}}" class="btn btn-default"
+						role="button">See Album (#{{image.albumId}})</a>
 				</div>
 			</div>
 		</div>

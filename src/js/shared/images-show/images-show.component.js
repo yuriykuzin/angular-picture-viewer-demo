@@ -6,14 +6,14 @@ class Controller {
   albumTitle = '';
   constructor($http, $scope) {
     $http.get((!this.albumid) ?
-        'http://jsonplaceholder.typicode.com/photos' :
-        'http://jsonplaceholder.typicode.com/albums/' + this.albumid + '/photos')
+        'https://jsonplaceholder.typicode.com/photos' :
+        'https://jsonplaceholder.typicode.com/albums/' + this.albumid + '/photos')
       .success(response => {
         this.images = response;
         this.imagesToShow = this.images.slice(0, Math.min(9, this.images.length));
       });
     if (this.albumid) {
-      $http.get('http://jsonplaceholder.typicode.com/albums/' + this.albumid)
+      $http.get('https://jsonplaceholder.typicode.com/albums/' + this.albumid)
         .success(response => this.albumTitle = response.title);
     }
     window.addEventListener('scroll', () => this.onScroll($scope));

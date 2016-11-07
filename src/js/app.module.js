@@ -6,10 +6,11 @@ import navbarComponent from './navbar/navbar.component.js';
 import imagesShowComponent from './shared/images-show/images-show.component';
 import home from './pages/home';
 import album from './pages/album';
+import image from './pages/image';
 
 import '../css/main.scss';
 
-export default angular.module('app', [uirouter, home, album])
+export default angular.module('app', [uirouter, home, album, image])
   .component('navbar', navbarComponent)
   .component('showimages', imagesShowComponent)
   .config(routing)

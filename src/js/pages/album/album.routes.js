@@ -6,6 +6,5 @@ export default function routes($routeProvider) {
       url: '/album/:albumid',
       template: require('./album.html'),
       controller: 'AlbumController',
-      /* controllerAs: 'album',*/
     });
 }
