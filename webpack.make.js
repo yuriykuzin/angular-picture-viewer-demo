@@ -250,7 +250,7 @@ module.exports = function makeWebpackConfig(options) {
     }
 
     // Add build specific plugins
-/*    if (BUILD) {
+    if (BUILD) {
         config.plugins.push(
             // Reference: http://webpack.github.io/docs/list-of-plugins.html#noerrorsplugin
             // Only emit files when there are no errors
@@ -264,7 +264,7 @@ module.exports = function makeWebpackConfig(options) {
             // Minify all javascript, switch loaders to minimizing mode
             new webpack.optimize.UglifyJsPlugin()
         )
-    }*/
+    }
 
     /**
      * Dev server configuration
