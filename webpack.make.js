@@ -234,9 +234,7 @@ module.exports = function makeWebpackConfig(options) {
             new HtmlWebpackPlugin({
                 template: './src/index.html',
                 inject: 'body',
-                minify: BUILD ? {
-                  removeAttributeQuotes: true
-                } : BUILD
+                minify: (false)
             }),
             new BrowserSyncPlugin({
                 host: '127.0.0.1'/*'0.0.0.0'*/,
